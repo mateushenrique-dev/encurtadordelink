@@ -25,32 +25,45 @@
   <body>
     <div class="body">
       <header class="header container">
-        <div class="menu">
-          <div><img src="images/logo.svg" alt="Shortly" /></div>
-          <nav>
-            <ul>
-              <li><a href="">Features</a></li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Resources</a></li>
-            </ul>
-          </nav>
+        <div>
+          <div class="menu">
+            <div><img src="images/logo.svg" alt="Shortly" /></div>
+            <nav>
+              <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Resources</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="login-field">
+            <nav>
+              <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="">Sign Up</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="login-field">
-          <nav>
-            <ul>
-              <li><a href="">Login</a></li>
-              <li><a href="">Sign Up</a></li>
-            </ul>
-          </nav>
+        <div class="menu-hamburguer-container">
+          <div class="menu-hamburguer">
+            <input type="checkbox" id="checkbox-menu" />
+            <label for="checkbox-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div id="menu-hamburguer-shortly"><img src="images/logo.svg" alt="Shortly" /></div>
         </div>
-        <div class="menu-hamburguer">
-          <input type="checkbox" id="checkbox-menu">
-          <label for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+        <ul class="menu-mobile">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+          <hr />
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
       </header>
       <section class="introduction container">
         <div class="introduction-text">
@@ -67,9 +80,15 @@
       </section>
       <main class="main">
         <div class="container">
-          <div class="encurter-field">
-            <input type="text" placeholder="Shorten a link here..." />
-            <a href="">Shorten It!</a>
+          <div class="encurter">
+            <div class="encurter-field">
+              <input type="url" id="url" placeholder="Shorten a link here..." />
+              <a href="" onclick="encurtarLink()">Shorten It!</a>
+              <div></div>
+            </div>
+            <div class="encurter-links">
+              <ul></ul>
+            </div>
           </div>
           <section class="statistics">
             <div class="statistics-text">
