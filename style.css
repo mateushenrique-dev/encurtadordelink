@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
 body {
   overflow-x: hidden !important;
+  box-sizing: border-box;
 }
 
 h1,
@@ -207,8 +207,11 @@ label span:nth-child(3) {
   background: hsl(0, 0%, 93%);
   margin-top: 100px;
   position: relative;
-  --tamanho-main: 800px;
-  height: var(--tamanho-main);
+}
+
+.encurter {
+  display: grid;
+  justify-content: center;
 }
 
 .encurter-field {
@@ -230,7 +233,7 @@ label span:nth-child(3) {
   height: 50px;
   border: none;
   border-radius: 10px;
-  padding: 30px;
+  padding: 5px 30px;
   font-size: 18px;
   outline: none;
 }
@@ -355,6 +358,7 @@ input.empty::placeholder {
   display: flex;
   margin-top: 30px;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .statistics-specifications > div:nth-child(odd) {
@@ -382,7 +386,7 @@ input.empty::placeholder {
 .statistics-specifications > div img {
   background: hsl(257, 27%, 26%);
   padding: 15px;
-  width: 70px;
+  width: 40px;
   border-radius: 50%;
   position: absolute;
   top: -40px;
@@ -487,7 +491,6 @@ input.empty::placeholder {
 /* Responsividade */
 
 @media (max-width: 500px) {
-
   .encurter-links li {
     justify-content: center;
     grid-template-columns: 250px;
@@ -576,8 +579,6 @@ input.empty::placeholder {
     width: 260px;
   }
   .main {
-    --tamanho-main: 1650px;
-    height: var(--tamanho-main);
     margin-top: 130px;
   }
   .statistics {

@@ -44,18 +44,6 @@ function linkEncurtado(link, linkoriginal) {
   `
   linksField.appendChild(liLinks)
   sessionStorage.setItem('Links', linksField.innerHTML)
-  if(document.querySelector('main').getBoundingClientRect().width > 500) {
-  height += 100
-  } else {
-    height += 400
-  }
-  console.log(height)
-  if(!sessionStorage['Height']) {
-    document.querySelector('.main').style.height = `calc(calc(var(--tamanho-main) + ${height}px !important))`
-  } else {
-    document.querySelector('.main').style.height = `calc(calc(${sessionStorage['Height']}px + 100px !important))`
-  }
-  sessionStorage.setItem('Height', document.querySelector('.main').getBoundingClientRect().height)
 }
 
 function copiar(linkShort, linkCode) {
@@ -72,7 +60,6 @@ function copiar(linkShort, linkCode) {
 
 if(sessionStorage['Links']) {
   document.querySelector('.encurter-links ul').innerHTML = sessionStorage['Links']
-  document.querySelector('.main').style.height = `${sessionStorage['Height']}px`
 }
 
 
