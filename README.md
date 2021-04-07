@@ -41,6 +41,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Pure Javascript
+- API
 
 
 ## Author
